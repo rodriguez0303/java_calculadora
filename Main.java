@@ -84,6 +84,77 @@ public class Main {
 
                 // Finaliza el caso default
                 break;
+                        // Caso 4: calcular el arcoseno
+            case 4:
+
+                // Se calcula el arcoseno del valor ingresado
+                resultado = Math.asin(angulo);
+
+                // Se muestra el resultado obtenido
+                System.out.println("Resultado: " + resultado);
+
+                // Finaliza este caso
+                break;
+
+            // Caso 5: calcular el arcocoseno
+            case 5:
+
+                // Se calcula el arcocoseno del valor ingresado
+                resultado = Math.acos(angulo);
+
+                // Se muestra el resultado obtenido
+                System.out.println("Resultado: " + resultado);
+
+                // Finaliza este caso
+                break;
+
+            // Caso 6: calcular la arcotangente
+            case 6:
+
+                // Se calcula la arcotangente del valor ingresado
+                resultado = Math.atan(angulo);
+
+                // Se muestra el resultado obtenido
+                System.out.println("Resultado: " + resultado);
+
+                // Finaliza este caso
+                break;
+
+            // Caso 7: calcular el seno hiperbólico
+            case 7:
+
+                // Se calcula el seno hiperbólico
+                resultado = Math.sinh(angulo);
+
+                // Se muestra el resultado obtenido
+                System.out.println("Resultado: " + resultado);
+
+                // Finaliza este caso
+                break;
+
+            // Caso 8: calcular el coseno hiperbólico
+            case 8:
+
+                // Se calcula el coseno hiperbólico
+                resultado = Math.cosh(angulo);
+
+                // Se muestra el resultado obtenido
+                System.out.println("Resultado: " + resultado);
+
+                // Finaliza este caso
+                break;
+
+            // Caso 9: calcular la tangente hiperbólica
+            case 9:
+
+                // Se calcula la tangente hiperbólica
+                resultado = Math.tanh(angulo);
+
+                // Se muestra el resultado obtenido
+                System.out.println("Resultado: " + resultado);
+
+                // Finaliza este caso
+                break;
         }
 
         // Se cierra el Scanner para liberar recursos
