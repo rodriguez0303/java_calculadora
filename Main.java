@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
+        
+        //Generación de menú y título del menú 
         System.out.println("CALCULADORA TRIGONOMÉTRICA");
         System.out.println("1. seno (sin)");
         System.out.println("2. coseno (cos)");
@@ -21,11 +22,72 @@ public class Main {
 
         System.out.print("Seleccione una opción: ");
         
-        // Se lee un número entero escrito por el usuario y se guarda en la variable valor
-        int valor = teclado.nextInt();
+        // Se lee un número entero escrito por el usuario y se guarda en la variable opcion
+        int opcion = teclado.nextInt();
         
         // Se muestra la opción que el usuario seleccionó
-        System.out.println("Usted seleccionó: " + valor);
+        System.out.println("Usted seleccionó: " + opcion);
+        
+        // Se le solicita al usuario el ángulo sobre el cual se realizará el cálculo
+        System.out.print("Ingrese el ángulo: ");
+        
+        // Se lee el ángulo ingresado por el usuario y se guarda en la variable angulo
+        double angulo = teclado.nextDouble();
+        
+        // Se muestra el ángulo ingresado por el usuario
+        System.out.println("Ángulo ingresado: " + angulo);
+        
+        // Se evalúa la opción elegida por el usuario
+        switch(opcion) {
+
+            // Caso 1: calcular el seno
+            case 1:
+
+                // Se convierte el ángulo de grados a radianes y se calcula el seno
+                double resultado = Math.sin(Math.toRadians(angulo));
+
+                // Se muestra el resultado obtenido
+                System.out.println("Resultado: " + resultado);
+
+                // Finaliza este caso
+                break;
+
+            // Caso 2: calcular el coseno
+            case 2:
+
+                // Se convierte el ángulo de grados a radianes y se calcula el coseno
+                resultado = Math.cos(Math.toRadians(angulo));
+
+                // Se muestra el resultado obtenido
+                System.out.println("Resultado: " + resultado);
+
+                // Finaliza este caso
+                break;
+
+            // Caso 3: calcular la tangente
+            case 3:
+
+                // Se convierte el ángulo de grados a radianes y se calcula la tangente
+                resultado = Math.tan(Math.toRadians(angulo));
+
+                // Se muestra el resultado obtenido
+                System.out.println("Resultado: " + resultado);
+
+                // Finaliza este caso
+                break;
+
+            // Si el usuario escribe una opción no válida
+            default:
+
+                // Se informa que la opción ingresada no existe
+                System.out.println("Opción inválida");
+
+                // Finaliza el caso default
+                break;
+        }
+
+        // Se cierra el Scanner para liberar recursos
+        teclado.close();
 
     }
 }
